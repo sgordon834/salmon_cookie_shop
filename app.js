@@ -4,6 +4,7 @@ var pikePlace = {
   min: 17,
   max: 88,
   avg: 5.2,
+  total: 0,
   cookieArr: [],
 
   ranNumb: function(min, max) {
@@ -14,9 +15,10 @@ var pikePlace = {
   makeCookie: function() {
   for(var i = 0; i < storeHours.length; i++) {
     var hourlyCookies = Math.round(this.avg) * this.ranNumb();
-    pikePlace.cookieArr.push(hourlyCookies);
+    this.cookieArr.push(hourlyCookies);
+    this.total += hourlyCookies;
   }
-  console.log(pikePlace.cookieArr);
+  console.log(pikePlace.hourlyCookies);
   }
 };
 pikePlace.makeCookie();
