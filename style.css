@@ -1,0 +1,23 @@
+
+h1 {
+  text-align: center;
+  background-color: #682B68;
+  color: white;
+}
+
+
+main {
+
+font-family: 'Droid Sans', sans-serif;
+
+}
+
+body {
+  background-color: #AA5BAA;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
