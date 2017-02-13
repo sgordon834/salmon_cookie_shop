@@ -64,5 +64,9 @@ var storeTot = document.createElement('th');
   cookieTot.textContent = this.totals;
   storeName.appendChild(cookieTot);
   };
-  bellevue.render();
   pikePlace.render();
+  seaTac.render();
+  southCenter.render();
+  bellevue.render();
+  alki.render();
+  
