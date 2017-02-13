@@ -1,0 +1,54 @@
+
+h1 {
+  text-align: center;
+  background-color: #682B68;
+  color: beige;
+  font-family: 'Droid Serif', serif;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+
+.div {
+  border: 6px solid #949599;
+}
+
+.div1 {
+  border: solid black;
+}
+main {
+
+font-family: 'Droid Serif', serif;
+color: white;
+
+}
+
+body {
+  background-color: #AA5BAA;
+
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 30%;
+    background-color: #4E1B4E;
+}
+
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  color: white;
+  background: url(http://www.worldmomsblog.com/wp-content/uploads/2012/04/chinook-salmon.jpg) no-repeat top center;
+  font-size: 1.3em;
+  margin: 40px auto;
+  text-align: center;
+  background-size: cover;
+  font-family: 'Caveat Brush', cursive;
+
+}
