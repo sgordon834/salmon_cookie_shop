@@ -29,7 +29,7 @@ salmonShop.prototype.salesPerHr = function () {
   console.log(ranNumb, this.totals);
 };
 
-
+//3. The HEADER row and footer row are each created in their own stand-alone function
 var table = document.getElementById('cookieData');
 var createRowElement = document.createElement('tr');
   table.appendChild(createRowElement);
@@ -37,7 +37,7 @@ function genTable(){
 var store = document.createElement('th');
   store.textContent = 'Store Name:';
   createRowElement.appendChild(store);
-//For loop to create rows for time shop is open
+//3. For loop to create rows for time shop is open and add FOOTER row for totals.
 for (var i = 0; i < storeHours.length; i++) {
   var storeHrs = document.createElement('th');
   storeHrs.textContent = storeHours[i];
