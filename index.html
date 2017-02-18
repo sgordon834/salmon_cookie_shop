@@ -11,16 +11,31 @@
 <body>
   <header>
     <div class="div">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTcDwHF0mJpmVa1NsVIS95Yp9jWHcPBLH7AkYnwekoDkJwP5mr" alt="redsalmon">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTcDwHF0mJpmVa1NsVIS95Yp9jWHcPBLH7AkYnwekoDkJwP5mr" align="center"  alt="redsalmon">
       <h1>Salmon Cookie Shop</h1>
     </div>
   </header>
 
   <main class="main">
     <h2>Serving the Pacific Northwest since 1925</h2>
-    <form id="userForm">
+    <form id="userform" align="center">
+      <fieldset>
+        <label for="name">Store Name</label>
+        <input type="text" name="name" required>
+
+        <label for="maxCust">Max Customer</label>
+        <input type="number" name="maxCust" min="0" required>
+
+        <label for="minCust">Minimum Customer</label>
+        <input type="number" name="minCust" min="0" required>
+
+        <label for="avgCust">Average Customer</label>
+        <input type="number" name="avgCust" min="0" required>
+
+        <input type="submit" value="Submit">
+      </fieldset>
       <table id="cookieData" align="center">
-        
+
       </table>
     </main>
 
@@ -29,6 +44,7 @@
   </body>
   <div class="div1">
     <footer>
+      <img src="http://robertehill.github.io/cookie-stand-REH/img/3.jpg" width="500" alt="">
       <h3>Stop on By for the Best Salmon Cookies Ever!</h3>
 
     </footer>
