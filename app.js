@@ -103,6 +103,7 @@ function handleFormSubmit(event) {
   console.log(minCust, maxCust);
 
 //User creates new store
+// 4. As we saw in class, the event handler should use the take the data from the input field, pass it into the constructor function, and create a new instance of a cookie stand that then appends to the table.
   var newStore = new SalmonShop(name, maxCust, minCust, avgCust);
   newStore.salesPerHr();
   newStore.storeRow();
@@ -113,6 +114,7 @@ function handleFormSubmit(event) {
   event.target.avgCust.value = null;
 }
 //call form and display data
+//3. Your JS will need an event listener and and event handler, and also a variable to facilitate DOM access to the form.
 form.addEventListener('submit', handleFormSubmit);
 
 pikePlace.render();
