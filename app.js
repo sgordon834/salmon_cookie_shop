@@ -5,6 +5,7 @@ var southCenter = new salmonShop ("Southcenter: ", 11, 38, 1.9);
 var bellevue = new salmonShop ("Bellevue Square: ", 20, 48, 3.3);
 var alki = new salmonShop ("Alki: ", 3, 24, 2.6);
 
+//1. Good use of a constructor function; style and syntax are correctly implemented
 function salmonShop(storeLocation, min, max, avg) {
   this.storeLocation = storeLocation;
   this.min = min;
