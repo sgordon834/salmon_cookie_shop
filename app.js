@@ -1,4 +1,4 @@
-
+//4. Duplicate code has been removed and DRY principles are evident
 storeHours = ['10am:', '11am:', '12pm:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:'];
 var pikePlace = new salmonShop ("Pike Place: ", 17, 88, 5.2);
 var seaTac = new salmonShop ("SeaTac: ", 6, 24, 1.2);
