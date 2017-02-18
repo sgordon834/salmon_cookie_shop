@@ -1,3 +1,4 @@
+//4. Duplicate code has been removed and DRY principles are evident
 storeHours = ['10am:', '11am:', '12pm:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:'];
 var pikePlace = new salmonShop ("Pike Place: ", 17, 88, 5.2);
 var seaTac = new salmonShop ("SeaTac: ", 6, 24, 1.2);
@@ -28,6 +29,7 @@ salmonShop.prototype.salesPerHr = function () {
   console.log(ranNumb, this.totals);
 };
 
+//3. The HEADER row and footer row are each created in their own stand-alone function
 var table = document.getElementById('cookieData');
 var createRowElement = document.createElement('tr');
   table.appendChild(createRowElement);
@@ -35,7 +37,7 @@ function genTable(){
 var store = document.createElement('th');
   store.textContent = 'Store Name:';
   createRowElement.appendChild(store);
-//For loop to create rows for time shop is open
+//3. For loop to create rows for time shop is open and tech requirement 3 FOOTER row.
 for (var i = 0; i < storeHours.length; i++) {
   var storeHrs = document.createElement('th');
   storeHrs.textContent = storeHours[i];
@@ -65,6 +67,8 @@ var storeTot = document.createElement('th');
   cookieTot.textContent = this.totals;
   storeName.appendChild(cookieTot);
   };
+
+  //2. Each cookie stand location should have a separate render() method that creates and appends its row to the table
   pikePlace.render();
   seaTac.render();
   southCenter.render();
