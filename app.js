@@ -31,7 +31,6 @@ SalmonShop.prototype.salesPerHr = function() {
 };
 
 var form = document.getElementById('userform');
-// var uTable = document.getElementById('userTable')
 var table = document.getElementById('cookieData');
 var createRowElement = document.createElement('tr');
 table.appendChild(createRowElement);
@@ -40,6 +39,7 @@ function genTable() {
   var store = document.createElement('th');
   store.textContent = 'Store Name:';
   createRowElement.appendChild(store);
+
   //For loop to create rows for time shop is open
   for (var i = 0; i < storeHours.length; i++) {
     var storeHrs = document.createElement('th');
