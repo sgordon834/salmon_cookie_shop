@@ -11,16 +11,36 @@
 <body>
   <header>
     <div class="div">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTcDwHF0mJpmVa1NsVIS95Yp9jWHcPBLH7AkYnwekoDkJwP5mr" alt="redsalmon">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTcDwHF0mJpmVa1NsVIS95Yp9jWHcPBLH7AkYnwekoDkJwP5mr" align="center"  alt="redsalmon">
       <h1>Salmon Cookie Shop</h1>
     </div>
   </header>
 
   <main class="main">
     <h2>Serving the Pacific Northwest since 1925</h2>
-    <form id="userForm">
+
+    <!-- 1. Add the necessary HTML to create the input form. Don't forget <fieldset>!  -->
+    <form id="userform" align="center">
+      <!-- Added fieldset -->
+      <fieldset>
+
+        <!-- 2. Use the constructor function as your guide to determine what input fields your form needs (hint: also consider what is passed in when creating instances!)  -->
+        <label for="name">Store Name</label>
+        <input type="text" name="name" required>
+        <!-- 5. Lines 32, 35, and 38 are for error requirments -->
+        <label for="maxCust">Max Customer</label>
+        <input type="number" name="maxCust" min="0" required>
+
+        <label for="minCust">Minimum Customer</label>
+        <input type="number" name="minCust" min="0" required>
+
+        <label for="avgCust">Average Customer</label>
+        <input type="number" name="avgCust" min="0" required>
+
+        <input type="submit" value="Submit">
+      </fieldset>
       <table id="cookieData" align="center">
-        
+
       </table>
     </main>
 
@@ -29,6 +49,7 @@
   </body>
   <div class="div1">
     <footer>
+      <img src="http://robertehill.github.io/cookie-stand-REH/img/3.jpg" width="500" alt="">
       <h3>Stop on By for the Best Salmon Cookies Ever!</h3>
 
     </footer>
