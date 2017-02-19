@@ -71,26 +71,6 @@ SalmonShop.prototype.render = function() {
   storeName.appendChild(cookieTot);
 };
 
-SalmonShop.prototype.storeRow = function() {
-  // this.salesPerHr();
-  var row = document.createElement('tr');
-
-  var cellName = document.createElement('td');
-  cellName.textContent = this.storeLocation;
-  row.appendChild(cellName);
-
-  for (var k = 0; k < storeHours.length; k++) {
-    var dataCell = document.createElement('td');
-    dataCell.textContent = this.cookieArrHr[k];
-    row.appendChild(dataCell);
-    table.appendChild(row);
-  };
-
-  var totalCell = document.createElement('td');
-  totalCell.textContent = this.totals;
-  row.appendChild(totalCell);
-};
-
 function handleFormSubmit(event) {
   event.preventDefault();
   console.log(event);
@@ -106,7 +86,7 @@ function handleFormSubmit(event) {
 // 4. As we saw in class, the event handler should use the take the data from the input field, pass it into the constructor function, and create a new instance of a cookie stand that then appends to the table.
   var newStore = new SalmonShop(name, maxCust, minCust, avgCust);
   newStore.salesPerHr();
-  newStore.storeRow();
+  newStore.render();
 
   event.target.name.value = null;
   event.target.maxCust.value = null;
