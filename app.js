@@ -12,6 +12,7 @@ function SalmonShop(storeLocation, min, max, avg) {
   this.avg = avg;
   this.cookieArrHr = [];
   this.totals = 0;
+  
 };
 //Random number generator function
 SalmonShop.prototype.randomNumber = function() {
@@ -97,8 +98,8 @@ function handleFormSubmit(event) {
 //3. Your JS will need an event listener and and event handler, and also a variable to facilitate DOM access to the form.
 form.addEventListener('submit', handleFormSubmit);
 
-pikePlace.render();
-seaTac.render();
-southCenter.render();
-bellevue.render();
-alki.render();
+// pikePlace.render();
+// seaTac.render();
+// southCenter.render();
+// bellevue.render();
+// alki.render();
