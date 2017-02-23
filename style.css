@@ -11,6 +11,7 @@ h2 {
   color: beige;
 }
 
+
 .div {
   border: 6px solid #949599;
 }
@@ -30,6 +31,16 @@ body {
 
 
 }
+
+table {
+    border-collapse: separate;;
+}
+
+table, th, tr, td {
+    border: 1px solid lavender;
+    border-spacing: 5px;
+    text-align: center;
+  }
 
 img {
     display: block;
