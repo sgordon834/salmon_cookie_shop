@@ -29,7 +29,13 @@ salmonShop.prototype.salesPerHr = function () {
   console.log(ranNumb, this.totals);
 };
 
+// var storeTable = document.getElementById('cookieData');
 //3. The HEADER row and footer row are each created in their own stand-alone function
+// function headRow() {
+//   var tRow = document.createElement('tr');
+//   var thead = document.createElement('th')
+//   thead.textContent = 'Store Name';
+//   tRow.appendChild(thead);
 var table = document.getElementById('cookieData');
 var createRowElement = document.createElement('tr');
   table.appendChild(createRowElement);
@@ -39,9 +45,9 @@ var store = document.createElement('th');
   createRowElement.appendChild(store);
 //3. For loop to create rows for time shop is open and add FOOTER row for totals.
 for (var i = 0; i < storeHours.length; i++) {
-  var storeHrs = document.createElement('th');
-  storeHrs.textContent = storeHours[i];
-  createRowElement.appendChild(storeHrs);
+  var thead1 = document.createElement('th');
+  thead1.textContent = storeHours[i];
+  createRowElement.appendChild(thead1);
 };
 //Totals row is outside of for loop
 var storeTot = document.createElement('th');
