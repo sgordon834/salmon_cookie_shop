@@ -1,9 +1,5 @@
 var storeHours = ['10am:', '11am:', '12pm:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:'];
-var pikePlace = new SalmonShop("Pike Place: ", 17, 88, 5.2);
-var seaTac = new SalmonShop("SeaTac: ", 6, 24, 1.2);
-var southCenter = new SalmonShop("Southcenter: ", 11, 38, 1.9);
-var bellevue = new SalmonShop("Bellevue Square: ", 20, 48, 3.3);
-var alki = new SalmonShop("Alki: ", 3, 24, 2.6);
+
 
 function SalmonShop(storeLocation, min, max, avg) {
   this.storeLocation = storeLocation;
@@ -12,6 +8,7 @@ function SalmonShop(storeLocation, min, max, avg) {
   this.avg = avg;
   this.cookieArrHr = [];
   this.totals = 0;
+  this.render();
 
 };
 //Random number generator function
@@ -94,12 +91,19 @@ function handleFormSubmit(event) {
   event.target.minCust.value = null;
   event.target.avgCust.value = null;
 }
+
+var pikePlace = new SalmonShop("Pike Place: ", 17, 88, 5.2);
+var seaTac = new SalmonShop("SeaTac: ", 6, 24, 1.2);
+var southCenter = new SalmonShop("Southcenter: ", 11, 38, 1.9);
+var bellevue = new SalmonShop("Bellevue Square: ", 20, 48, 3.3);
+var alki = new SalmonShop("Alki: ", 3, 24, 2.6);
+
 //call form and display data
 //3. Your JS will need an event listener and and event handler, and also a variable to facilitate DOM access to the form.
 form.addEventListener('submit', handleFormSubmit);
 
-pikePlace.render();
-seaTac.render();
-southCenter.render();
-bellevue.render();
-alki.render();
+// pikePlace.render();
+// seaTac.render();
+// southCenter.render();
+// bellevue.render();
+// alki.render();
